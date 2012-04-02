@@ -1,14 +1,1 @@
-
-RuntimeConsole.tmproj
-
-todo.txt
-
-.DS_Store
-
-*.meta
-
-!*.unity.meta
-
-!*.ttf.meta
-
-OGC Example Project/*
+Library

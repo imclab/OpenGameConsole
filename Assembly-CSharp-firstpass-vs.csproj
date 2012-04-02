@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{2D2093F6-B025-48F9-5B4D-95D69A710D26}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_0;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_WEBPLAYER;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\OpenGameConsole\_Core\CoreCommands.cs" />
+     <Compile Include="Assets\Plugins\OpenGameConsole\_Core\GameConsole.cs" />
+     <Compile Include="Assets\Plugins\OpenGameConsole\_Displays\RuntimeConsoleActivation.cs" />
+     <Compile Include="Assets\Plugins\OpenGameConsole\_Displays\RuntimeConsoleDisplay.cs" />
+     <Compile Include="Assets\Plugins\OpenGameConsole\_Utility\ConsoleErrors.cs" />
+     <Compile Include="Assets\Plugins\OpenGameConsole\_Utility\DictionaryWrapper.cs" />
+     <Compile Include="Assets\Plugins\OpenGameConsole\_Utility\Editor\OGCDLEditor.cs" />
+     <Compile Include="Assets\Plugins\OpenGameConsole\_Utility\OGCDownloader.cs" />
+     <Compile Include="Assets\Plugins\OpenGameConsole\_Utility\OGCParse.cs" />
+     <Compile Include="Assets\Plugins\OpenGameConsole\_Utility\OGCSerialization.cs" />
+     <Compile Include="Assets\Plugins\OpenGameConsole\lib\Options.cs" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\man_version.txt" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\man_ogc.txt" />
+     <None Include="Assets\Plugins\OpenGameConsole\DB\inactive-commands.xml" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\man_man.txt" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\man_time.txt" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\active-commands.xml" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\man_clear.txt" />
+     <None Include="Assets\Editor Default Resources\OpenGameConsole\Font\SIL - Open Font License.txt" />
+     <None Include="Assets\Plugins\OpenGameConsole\!LICENSE\LICENCSE.txt" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\man_get.txt" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\man_listobjects.txt" />
+     <None Include="Assets\Plugins\OpenGameConsole\DB\inactive-aliases.xml" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\man_send.txt" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\man_gc.txt" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\man_loc.txt" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\man_echo.txt" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\active-aliases.xml" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\man_physics.txt" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\man_move.txt" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\man_run.txt" />
+     <None Include="Assets\Plugins\OpenGameConsole\Resources\man_mv.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
